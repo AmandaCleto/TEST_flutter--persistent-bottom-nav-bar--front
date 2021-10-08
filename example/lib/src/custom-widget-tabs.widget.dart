@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/app.dart';
 
-import 'main.dart';
+import '../main.dart';
 import 'screens.dart';
 
 class CustomWidgetExample extends StatefulWidget {
