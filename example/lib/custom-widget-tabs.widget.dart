@@ -99,12 +99,12 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
         activeColorPrimary: Colors.indigo,
         inactiveColorPrimary: Colors.grey,
       ),
-      PersistentBottomNavBarItem(
-        icon: Icon(Icons.settings),
-        title: ("Settings"),
-        activeColorPrimary: Colors.indigo,
-        inactiveColorPrimary: Colors.grey,
-      ),
+      // PersistentBottomNavBarItem(
+      //   icon: Icon(Icons.settings),
+      //   title: ("Settings"),
+      //   activeColorPrimary: Colors.indigo,
+      //   inactiveColorPrimary: Colors.grey,
+      // ),
     ];
   }
 
