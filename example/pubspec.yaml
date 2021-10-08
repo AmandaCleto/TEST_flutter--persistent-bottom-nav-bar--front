@@ -9,13 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  persistent_bottom_nav_bar: ^4.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  persistent_bottom_nav_bar:
-    path: ../
 
 flutter:
   uses-material-design: true

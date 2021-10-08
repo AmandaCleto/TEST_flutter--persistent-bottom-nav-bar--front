@@ -82,11 +82,11 @@ packages:
     source: hosted
     version: "1.8.0"
   persistent_bottom_nav_bar:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: persistent_bottom_nav_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "4.0.2"
   sky_engine:
     dependency: transitive
