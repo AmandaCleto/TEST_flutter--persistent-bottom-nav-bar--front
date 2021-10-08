@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/features/screen-2/screen2.dart';
 
 import 'modal-screen.dart';
 
@@ -142,68 +143,6 @@ class MainScreen extends StatelessWidget {
                 height: 60.0,
               ),
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class MainScreen2 extends StatelessWidget {
-  const MainScreen2({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.teal,
-      body: Container(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              ElevatedButton(
-                onPressed: () {
-                  pushNewScreen(context, screen: MainScreen3());
-                },
-                child: Text(
-                  "Go to Third Screen",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text(
-                  "Go Back to First Screen",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class MainScreen3 extends StatelessWidget {
-  const MainScreen3({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
-      body: Container(
-        child: Center(
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            child: Text(
-              "Go Back to Second Screen",
-              style: TextStyle(color: Colors.white),
-            ),
           ),
         ),
       ),

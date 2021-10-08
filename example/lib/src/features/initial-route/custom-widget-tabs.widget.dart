@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
-import 'package:persistent_bottom_nav_bar_example_project/src/app.dart';
-
-import '../main.dart';
-import 'screens.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/components/customNavigatorBar.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/features/screens/screens.dart';
 
 class CustomWidgetExample extends StatefulWidget {
   final BuildContext menuScreenContext;
@@ -26,15 +24,6 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
 
   List<Widget> _buildScreens() {
     return [
-      MainScreen(
-        menuScreenContext: widget.menuScreenContext,
-        hideStatus: _hideNavBar,
-        onScreenHideButtonPressed: () {
-          setState(() {
-            _hideNavBar = !_hideNavBar;
-          });
-        },
-      ),
       MainScreen(
         menuScreenContext: widget.menuScreenContext,
         hideStatus: _hideNavBar,
@@ -100,12 +89,6 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
         activeColorPrimary: Colors.indigo,
         inactiveColorPrimary: Colors.grey,
       ),
-      // PersistentBottomNavBarItem(
-      //   icon: Icon(Icons.settings),
-      //   title: ("Settings"),
-      //   activeColorPrimary: Colors.indigo,
-      //   inactiveColorPrimary: Colors.grey,
-      // ),
     ];
   }
 
@@ -128,7 +111,7 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
         controller: _controller,
         screens: _buildScreens(),
         confineInSafeArea: true,
-        itemCount: 5,
+        itemCount: 4,
         handleAndroidBackButtonPress: true,
         stateManagement: true,
         hideNavigationBar: _hideNavBar,
