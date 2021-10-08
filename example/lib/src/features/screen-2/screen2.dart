@@ -8,6 +8,9 @@ class MainScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('screen2'),
+      ),
       backgroundColor: Colors.teal,
       body: Container(
         child: Center(

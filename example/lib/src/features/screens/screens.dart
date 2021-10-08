@@ -22,6 +22,9 @@ class MainScreen extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: Scaffold(
+          appBar: AppBar(
+            title: Text('home'),
+          ),
           backgroundColor: Colors.indigo,
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +32,9 @@ class MainScreen extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 30.0, vertical: 20.0),
+                  horizontal: 30.0,
+                  vertical: 20.0,
+                ),
                 child: TextField(
                   decoration: InputDecoration(hintText: "Test Text Field"),
                 ),

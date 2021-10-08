@@ -21,10 +21,10 @@ class _MainMenuState extends State<MainMenu> {
         children: <Widget>[
           Center(
             child: ElevatedButton(
-              child: Text("Custom widget example"),
+              child: Text("Ir para tela com bottom bar"),
               onPressed: () => pushNewScreen(
                 context,
-                screen: CustomWidgetExample(
+                screen: CustomWidget(
                   menuScreenContext: context,
                 ),
               ),

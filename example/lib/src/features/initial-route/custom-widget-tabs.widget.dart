@@ -3,15 +3,15 @@ import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:persistent_bottom_nav_bar_example_project/src/components/customNavigatorBar.dart';
 import 'package:persistent_bottom_nav_bar_example_project/src/features/screens/screens.dart';
 
-class CustomWidgetExample extends StatefulWidget {
+class CustomWidget extends StatefulWidget {
   final BuildContext menuScreenContext;
-  CustomWidgetExample({Key key, this.menuScreenContext}) : super(key: key);
+  CustomWidget({Key key, this.menuScreenContext}) : super(key: key);
 
   @override
-  _CustomWidgetExampleState createState() => _CustomWidgetExampleState();
+  _CustomWidgetState createState() => _CustomWidgetState();
 }
 
-class _CustomWidgetExampleState extends State<CustomWidgetExample> {
+class _CustomWidgetState extends State<CustomWidget> {
   PersistentTabController _controller;
   bool _hideNavBar;
 
@@ -95,7 +95,7 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Navigation Bar Demo')),
+      // appBar: AppBar(title: const Text('Navigation Bar Demo')),
       drawer: Drawer(
         child: Center(
           child: Column(

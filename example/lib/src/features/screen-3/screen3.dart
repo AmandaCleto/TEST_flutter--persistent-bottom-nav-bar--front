@@ -6,6 +6,9 @@ class MainScreen3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('screen3'),
+      ),
       backgroundColor: Colors.deepOrangeAccent,
       body: Container(
         child: Center(

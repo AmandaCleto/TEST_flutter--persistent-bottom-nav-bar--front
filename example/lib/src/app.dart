@@ -10,13 +10,13 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Persistent Bottom Navigation Bar example project',
+      title: 'Title of project',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainMenu(),
       initialRoute: '/',
       routes: {
+        '/': (context) => MainMenu(),
         // When navigating to the "/" route, build the FirstScreen widget.
         '/first': (context) => MainScreen2(),
         // When navigating to the "/second" route, build the SecondScreen widget.
