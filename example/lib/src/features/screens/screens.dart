@@ -23,7 +23,7 @@ class MainScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: Scaffold(
           appBar: AppBar(
-            title: Text('home'),
+            title: Text('other'),
           ),
           backgroundColor: Colors.indigo,
           body: Column(

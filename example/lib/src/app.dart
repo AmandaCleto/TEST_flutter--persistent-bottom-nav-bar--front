@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/features/home/documents/documents.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/features/home/notifications/notification.dart';
 
 import 'package:persistent_bottom_nav_bar_example_project/src/features/initial-route/initial.dart';
 import 'package:persistent_bottom_nav_bar_example_project/src/features/screen-2/screen2.dart';
@@ -21,6 +23,9 @@ class App extends StatelessWidget {
         '/first': (context) => MainScreen2(),
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/second': (context) => MainScreen3(),
+
+        '/notifications': (context) => NotificationPage(),
+        '/documents': (context) => DocumentsPage(),
       },
     );
   }

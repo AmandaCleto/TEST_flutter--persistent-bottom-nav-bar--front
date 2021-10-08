@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:persistent_bottom_nav_bar_example_project/src/components/customNavigatorBar.dart';
+import 'package:persistent_bottom_nav_bar_example_project/src/features/home/home.dart';
 import 'package:persistent_bottom_nav_bar_example_project/src/features/screens/screens.dart';
 
 class CustomWidget extends StatefulWidget {
@@ -24,7 +25,7 @@ class _CustomWidgetState extends State<CustomWidget> {
 
   List<Widget> _buildScreens() {
     return [
-      MainScreen(
+      HomeScreen(
         menuScreenContext: widget.menuScreenContext,
         hideStatus: _hideNavBar,
         onScreenHideButtonPressed: () {
